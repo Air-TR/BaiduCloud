@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496089287754&di=85ec513482086dd3b8b8a9f1afe81f59&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fskin%2F201308%2F20%2F14%2F58%2F521313881bf9f216.jpg%2521600x600.jpg">
+    <title>Air Search</title>
+    <style type="text/css">
+      button:hover{ box-shadow: 1px 1px 1px #AAA; }
+    </style>
+  </head>
+  <body>
+      <form autocomplete="off" style="position: absolute; width:100%; left: 0; top: 24%;text-align: center;">
+      	<h1 style="color: red;font-family: Times New Roman;">Air Search</h1>
+	      	<input type="text" id="showAjaxText" onfocus="this.style.border='1px #598CEE solid';" onblur="this.style.border='1px #BBB solid';" style="outline: none; border: 1px #BBB solid; font-size:16px;width:500px;height:33px; padding-left: 7px; 
+	      		background:scroll 0 0 #FFFFFF;"/><button type="button" id="search" onclick="baiduSearch()" onmouseover="this.style.backgroundColor='#317EF3';" onmouseout="this.style.backgroundColor='#3385FF';" style="width: 80px; height: 37px; background-color: #3385FF; border: none; cursor: pointer; outline :none; color: white; font-size: 16px;">搜 索</button>
+      	<input type="text" style="display: none;"/>
+      	<div id="showAjaxId" style="margin-left:425px;width:510px;height:220px;display:none; overflow-y:auto;overflow-x:hidden;"> </div>
+      </form>
+      <div style="width:100%;text-align: center; position: fixed; left: 0; top: 85%;">
+      	<p style="color: #AAA;">© www.tr.com taorun 2017.6</p>
+      </div>
+  </body>
+</html>
+
+<script type="text/javascript">
+  
+  	function baiduSearch() {
+  		var wd = document.getElementById("showAjaxText").value;
+  		window.location.href = "https://www.baidu.com/s?wd=" + wd;
+  	}
+  	
+  	document.onkeydown = function(e) {
+	   	if((e.keyCode || e.which) == 13) {
+		   	document.getElementById("search").click();
+	   	}
+	}
+  	
+</script>
