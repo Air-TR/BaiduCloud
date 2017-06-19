@@ -34,7 +34,7 @@ public class TextSimilarity {
 		
 		AipNlp client = new AipNlp(ALLTest.APP_ID, ALLTest.API_KEY, ALLTest.SECRET_KEY);
 		
-		String text = "金轮开发手册"; // 搜索框输入的文本
+		String text = "百度开发手册"; // 搜索框输入的文本
 		
 		Connection conn = null;
 		try {
