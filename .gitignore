@@ -2,3 +2,5 @@
 
 # Java class files
 *.class
+
+pom.properties
