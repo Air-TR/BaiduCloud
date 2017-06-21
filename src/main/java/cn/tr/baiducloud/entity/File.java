@@ -5,7 +5,6 @@ import java.math.BigDecimal;
 public class File {
 	
     private Integer id;
-    
 
     private String title;
 
