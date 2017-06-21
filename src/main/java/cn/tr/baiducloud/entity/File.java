@@ -10,7 +10,6 @@ public class File {
 
     private String content;
     
-    
     /**
      * 额外属性
      */
