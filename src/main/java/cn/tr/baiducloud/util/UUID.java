@@ -1,8 +1,14 @@
 package cn.tr.baiducloud.util;
 
-import java.util.UUID;
+/**
+ * 自动生成唯一id
+ * 
+ * @author taorun
+ * @date 2017年6月28日
+ *
+ */
 
-public class Test {
+public class UUID {
 	
 	public static void main(String[] args) {
 		String id = getUUID();
@@ -10,7 +16,7 @@ public class Test {
 	}
 	
 	public static String getUUID() {
-		return UUID.randomUUID().toString().replace("-","");
+		return java.util.UUID.randomUUID().toString().replace("-","");
 	}
 
 }
