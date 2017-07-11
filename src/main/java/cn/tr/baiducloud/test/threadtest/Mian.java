@@ -1,4 +1,4 @@
-package cn.tr.baiducloud.threadtest;
+package cn.tr.baiducloud.test.threadtest;
 
 public class Mian {
 	

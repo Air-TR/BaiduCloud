@@ -1,4 +1,4 @@
-package cn.tr.baiducloud.test;
+package results;
 
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -13,11 +13,11 @@ import org.json.JSONObject;
 import com.baidu.aip.nlp.AipNlp;
 
 import cn.tr.baiducloud.entity.File;
+import cn.tr.baiducloud.test.MainTest;
 import cn.tr.baiducloud.util.ComparatorFile;
 import cn.tr.baiducloud.util.DBUtil;
 
 /**
- * 
  * 短文本相似度测试类
  * 简介：根据搜索框输入的文本，匹配数据库记录，筛选出相似度大于规定值的记录，按要求排序输出。
  * 
@@ -32,7 +32,7 @@ public class TextSimilarity {
 	
 	public static void main(String[] args) {
 		
-		AipNlp client = new AipNlp(ALLTest.APP_ID, ALLTest.API_KEY, ALLTest.SECRET_KEY);
+		AipNlp client = new AipNlp(MainTest.APP_ID, MainTest.API_KEY, MainTest.SECRET_KEY);
 		
 		String text = "百度开发手册"; // 搜索框输入的文本
 		

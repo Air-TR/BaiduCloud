@@ -1,4 +1,4 @@
-package cn.tr.baiducloud.util;
+package cn.tr.baiducloud.test;
 
 import java.util.Arrays;
 import java.util.List;
